@@ -38,7 +38,7 @@
                 <input type="date" id="nascitaUtente"><br>
                 <input type="text" id="indirizzoUtente" placeholder="Indirizzo"><br>
                 <input type="text" id="emailUtente" placeholder="Email"><br>
-                <input type="text" id="telefonoUtente" placeholder="Numero di telefono"><br>
+                <input type="text" id="telefonoUtente" placeholder="Numero di telefono" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"><br>
                 <input type="text" id="occupazioneUtente" placeholder="Occupazione"><br>
                 <input type="submit" class="inviaDati">
             </form>
@@ -49,14 +49,14 @@
     <div class="rightPart">
 
         <div id="contenitoreRisultato">
-            <p>Nome: <span id="nome"></span></p>
-            <p>Cogome: <span id="cognome"></span></p>
-            <p>Codice Fiscale: <span id="cf"></span></p>
-            <p>Data di nascita: <span id="nascita"></span></p>
-            <p>Indirizzo: <span id="indirizzo"></span></p>
-            <p>Email: <span id="email"></span></p>
-            <p>Telefono: <span id="telefono"></span></p>
-            <p>Occupazione: <span id="occupazione"></span></p>
+            <p><b>Nome:</b> <span id="nome"></span></p>
+            <p><b>Cogome:</b> <span id="cognome"></span></p>
+            <p><b>Codice Fiscale:</b> <span id="cf"></span></p>
+            <p><b>Data di nascita:</b> <span id="nascita"></span></p>
+            <p><b>Indirizzo:</b> <span id="indirizzo"></span></p>
+            <p><b>Email:</b> <span id="email"></span></p>
+            <p><b>Telefono:</b> <span id="telefono"></span></p>
+            <p><b>Occupazione:</b> <span id="occupazione"></span></p>
         </div>
 
     </div>

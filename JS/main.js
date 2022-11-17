@@ -8,10 +8,10 @@ function prendiDati() {
     let nascitaUtente = document.getElementById('nascitaUtente').value;
     let indirizzoUtente = document.getElementById('indirizzoUtente').value;
     let emailUtente = checkEmail();
-    let telefonoUtente = document.getElementById('telefonoUtente').value;
+    let telefonoUtente = checkNumber();
     let occupazioneUtente = document.getElementById('occupazioneUtente').value;
 
-    if(cfUtente != 'ERROR' && emailUtente != 'ERROR') {
+    if(cfUtente != 'ERROR' && emailUtente != 'ERROR' && telefonoUtente != 'ERROR') {
         document.getElementById('alertError').style.display = 'none';
         printUtente(nomeUtente, cognomeUtente, cfUtente, nascitaUtente, indirizzoUtente, emailUtente, telefonoUtente, occupazioneUtente)
     }
@@ -50,7 +50,19 @@ function checkEmail() {
 
 }
 
+function checkNumber() {
 
+    let telefonoUtente = document.getElementById('telefonoUtente').value;
+    if(telefonoUtente.length != 10) {
+        document.getElementById('telefonoUtente').style.border = '2px solid red';
+        document.getElementById('alertError').style.display = 'block';
+        return 'ERROR';
+    }else{
+        document.getElementById('telefonoUtente').style.border = '1px solid #ccc';
+        return telefonoUtente;
+    }
+
+}
 
 function printUtente(nome, cognome, cf, nascita, indirizzo, email, telefono, occupazione) {
 
