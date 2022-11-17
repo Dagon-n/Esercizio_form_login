@@ -1,4 +1,4 @@
-// const Utente = require('./Utente');
+import {Utente} from "./Utente.js";
 
 function prendiDati() {
 
@@ -77,4 +77,14 @@ function printUtente(nome, cognome, cf, nascita, indirizzo, email, telefono, occ
     document.getElementById('telefono').innerText = telefono;
     document.getElementById('occupazione').innerText = occupazione;
 
+    creaUtente(nome, cognome, cf, nascita, indirizzo, email, telefono, occupazione);
+
 }
+
+// function creaUtente(nome, cognome, cf, nascita, indirizzo, email, telefono, occupazione) {
+
+//     const nuovoUtente = new Utente(nome, cognome, cf, nascita, indirizzo, email, telefono, occupazione);
+
+//     nuovoUtente.prova();
+
+// }
