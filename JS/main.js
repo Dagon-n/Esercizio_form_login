@@ -77,8 +77,6 @@ function printUtente(nome, cognome, cf, nascita, indirizzo, email, telefono, occ
     document.getElementById('telefono').innerText = telefono;
     document.getElementById('occupazione').innerText = occupazione;
 
-    creaUtente(nome, cognome, cf, nascita, indirizzo, email, telefono, occupazione);
-
 }
 
 // function creaUtente(nome, cognome, cf, nascita, indirizzo, email, telefono, occupazione) {
