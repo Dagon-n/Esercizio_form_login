@@ -1,0 +1,11 @@
+Esercizio da fare il giorno 17/11/2022:
+Creare Applicazione web che permette all'utente di inserire i seguenti dati anagrafici: 
+Nome,Cognome, CF, Data di nascita, Indirizzo, Email, Numero di telefono, Occupazione.
+Al premere di un bottone le informazioni vengono visualizzate nella medesima pagina. 
+Se l'utente cambia un dati, alla pressione dello stesso bottone, verranno visualizzati i dati aggiornati.
+
+BONUS: 
+    uso di classi
+
+BONUS 2: 
+    funzioni di controllo degli input inseriti (Es data in formato corretto, carattere @ presente nell'email ecc ecc)

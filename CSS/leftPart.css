@@ -1,0 +1,85 @@
+body {
+    position: relative;
+    height: 100%;
+    min-height: 100%;
+}
+
+.leftPart {
+    width: 50%;
+    height: 100%;
+    display: inline;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerForm {
+    width: 80%;
+    border-radius: 5px;
+    background-color: #fafafe;
+    padding: 20px;
+    margin: 17px 15px;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 20%);
+}
+
+.titoloForm {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+/* MESSAGGIO ERRORE */
+
+#alertError {
+    display: none;
+}
+
+.alertError {
+    background-color: #f44336; /* Red */
+    color: white;
+    margin: 10px 0 15px 0;
+    padding: 3px;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.inviaDati {
+    background-color: rgb(0, 210, 0);
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 3%;
+    width: 40%;
+}
+
+.inviaDati:hover {
+    background-color: rgb(0, 180, 0);
+}

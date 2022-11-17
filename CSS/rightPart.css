@@ -1,0 +1,11 @@
+.rightPart {
+    width: 50%;
+    height: 100%;
+    display: inline;
+    float: right;
+}
+
+#contenitoreRisultato {
+    display: none;
+    padding: 2%;
+}

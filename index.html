@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="JS/main.js"></script>
+    <link rel="stylesheet" href="CSS/navPart.css">
+    <link rel="stylesheet" href="CSS/leftPart.css">
+    <link rel="stylesheet" href="CSS/rightPart.css">
+
+    <title>Campo minato</title>
+
+</head>
+<body>
+
+    <div class="navPart">
+
+        <p class="title">Benvenuto!</p>
+
+    </div>
+
+    <div class="leftPart">
+
+        <div class="containerForm">
+            <form id="formLogin" class='formLogin' onsubmit="return prendiDati()">
+                <div class="titoloForm">Inserisci i Dati</div>
+                <div class="alertError" id="alertError">
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                    Campi errati!
+                </div>
+                <input type="text" id="nomeUtente" placeholder="Nome"><br>
+                <input type="text" id="cognomeUtente" placeholder="Cognome"><br>
+                <input type="text" id="cfUtente" placeholder="Codice Fiscale"><br>
+                <label for="nascitaUtente">Data di nascita </label><br>
+                <input type="date" id="nascitaUtente"><br>
+                <input type="text" id="indirizzoUtente" placeholder="Indirizzo"><br>
+                <input type="text" id="emailUtente" placeholder="Email"><br>
+                <input type="text" id="telefonoUtente" placeholder="Numero di telefono"><br>
+                <input type="text" id="occupazioneUtente" placeholder="Occupazione"><br>
+                <input type="submit" class="inviaDati">
+            </form>
+        </div>
+
+    </div>
+
+    <div class="rightPart">
+
+        <div id="contenitoreRisultato">
+            <p>Nome: <span id="nome"></span></p>
+            <p>Cogome: <span id="cognome"></span></p>
+            <p>Codice Fiscale: <span id="cf"></span></p>
+            <p>Data di nascita: <span id="nascita"></span></p>
+            <p>Indirizzo: <span id="indirizzo"></span></p>
+            <p>Email: <span id="email"></span></p>
+            <p>Telefono: <span id="telefono"></span></p>
+            <p>Occupazione: <span id="occupazione"></span></p>
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
